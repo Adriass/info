@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title> Info Coding </title>
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Vollkorn" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway:600" rel="stylesheet">
+
+	<link rel="stylesheet" href="Tribute.css" type="text/css">
+
+	<style>
+		body {
+	padding:0;
+	margin:0;
+	color: blue;
+	background-color: rgba(0, 0, 0, 0.804);
+}
+
+#container {
+	width: auto;
+	margin:100px;
+	background-color: rgb(0, 0, 0);
+	border-radius:30px;
+}
+
+h1 {
+	text-align: center;
+	padding:40px;
+	font-size:50px;
+	font-family: 'Raleway', sans-serif;
+}
+
+#image {
+	text-align:center;
+	width:100%;
+	height:100%;
+	margin-top:-30px;
+}
+
+#startPassage {
+	width: auto;
+	margin:50px 100px;
+}
+
+.paragraphFont {
+	font-size:20px;
+	font-family: 'Vollkorn', serif;
+}
+
+#videoPosition {
+	float:right;
+	padding:30px;
+}
+
+h2 {
+	font-family: 'Raleway', sans-serif;
+}
+
+footer {
+	text-align:center;
+	font-size:20px;
+}
+
+h1,h2,h4,h3 {
+	font-family: 'Courier New', Courier, monospace;
+	color: orange;
+}
+
+@media all and (max-width:1200px) {
+
+	.videoPosition {
+		float:none;
+	}
+	
+
+};
+
+.button {
+	position: fixed;
+	text-align: center;
+	font-size: 42px;
+	font-family: 'Raleway', sans-serif;
+	color: hsl(220, 80%, 50%);
+	width: 350px;
+	height: 100px;
+	margin-top: calc(50vh - 75px);
+	margin-left: calc(50vw - 175px);
+
+	border-radius: 30px;
+	text-shadow: 
+		0px 5px hsl(220, 80%, 30%), 
+		0px 10px 10px #0003;
+	box-shadow: 
+		0px 0px 0px 15px hsl(330, 80%, 50%),
+		0px 10px 0px 15px hsl(330, 80%, 40%),
+		0px 20px 20px 15px #0003;
+	cursor: pointer;
+	border-radius: 100px 30px 100px 30px;
+
+}
+
+.button p {
+	margin-top: 20px;
+	transform: rotate(-3deg);
+}
+
+.button:hover {
+	animation: .8s morph ease infinite;
+}
+
+.button:hover p {
+	animation: .8s rot ease infinite;
+}
+
+@keyframes morph {
+	0% {
+		border-radius: 100px 30px 100px 30px;
+	} 50% {
+		border-radius: 30px 100px 30px 100px;
+	} 100% {
+		border-radius: 100px 30px 100px 30px;
+	}
+}
+
+@keyframes rot {
+	0% {
+		transform: rotate(-3deg);
+	} 50% {
+		transform: rotate(3deg);
+	} 100% {
+		transform: rotate(-3deg);
+	}
+}
+
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  margin-right: 500px;
+  justify-content: flex-end; 
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+  justify-content: flex-end; 
+}
+
+.button-64 span {
+  background-color: black;
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+a {
+	text-decoration: none;
+	justify-content: flex-end; 
+}
+
+a:hover {
+	color: black;
+}
+</style>
+</head>
+<body>
+	<div id="container">
+		<header> 
+			<h1> HTML (HyperText Markup Language)</h1> 
+		</header>
+
+		<main>
+			<figure>
+		 <img src="data:image/png;base64,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" alt="Gambar HTML"  id="image"/>
+			</figure>
+			<article id = "startPassage">
+				<section class="paragraphFont"> 
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML, singkatan dari Hypertext Markup Language, adalah bahasa markup standar yang digunakan untuk membuat dan merancang halaman web. HTML memberikan struktur dasar untuk konten di dalam halaman web, seperti teks, gambar, hyperlink, formulir, tabel, dan elemen-elemen lainnya. Bahasa ini digunakan untuk mendefinisikan struktur dan arti konten pada halaman web, serta memungkinkan pengguna untuk menyusun elemen-elemen tersebut dengan cara yang terstruktur.</p>
+				</section>
+				<section> 
+					<article>
+						<header> <h2> Sejarah HTML</h2> </header>
+						<section  class="paragraphFont">
+							<p>HTML (Hypertext Markup Language) merupakan bahasa markup standar yang digunakan untuk membuat dan merancang halaman web. Sejarah HTML dimulai dengan konsep hypertext yang diusulkan oleh Ted Nelson pada tahun 1965. Pada awal 1980-an, standar markup seperti GML (Generalized Markup Language) muncul, dan Tim Berners-Lee, fisikawan di CERN, terinspirasi oleh konsep ini.</p>
+							<p>Tim Berners-Lee mengembangkan HTML sebagai bagian dari proyek WorldWideWeb di CERN pada tahun 1990, yang merupakan awal dari World Wide Web (WWW). HTML 2.0 diperkenalkan pada tahun 1995 dan memperkenalkan elemen-elemen seperti formulir dan tabel.</p>
+							<p>Seiring dengan perkembangan web, W3C (World Wide Web Consortium) didirikan pada tahun 1994 untuk mengembangkan standar web. HTML 3.2 dirilis pada tahun 1997 sebagai salah satu standar pertama dari W3C, dan HTML 4.0, dirilis pada tahun yang sama, membawa perbaikan signifikan serta memisahkan presentasi dan struktur menggunakan CSS (Cascading Style Sheets).</p>
+							<p>XHTML (Extensible Hypertext Markup Language) muncul sebagai langkah selanjutnya pada tahun 2000, dirancang untuk konsistensi dengan XML. Pada tahun 2004, proses pengembangan HTML5 dimulai oleh WHATWG dan W3C. HTML5, yang menjadi rekomendasi pada tahun 2014, membawa banyak perbaikan dan fitur baru, termasuk dukungan untuk multimedia tanpa plugin tambahan, API JavaScript yang lebih kuat, dan elemen-elemen baru seperti "canvas".</p>
+							<p>Sejak kemunculan HTML5, standar ini terus berkembang melalui pembaruan dan revisi. Sejarah HTML mencerminkan evolusi internet dari konsep hypertext awal hingga web dinamis yang kompleks. Antisipasi terhadap HTML6 juga menjadi bagian dari perkembangan masa depan dalam pembuatan dan pengelolaan halaman web.</p>
+						</section>
+					</article>
+				</section>
+				<section>
+					<article>
+						<header><h2>Berapa lama belajar HTML?</h2></header>
+						<section  class="paragraphFont">
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lama waktu yang dibutuhkan untuk belajar HTML dapat bervariasi tergantung pada beberapa faktor, termasuk tingkat pemahaman awal Anda tentang konsep pemrograman dan desain web, seberapa sering Anda berlatih, dan metode pembelajaran yang Anda pilih. Sebagai panduan umum:</p>
+
+							
+							
+							<section id = "videoPosition">
+								<iframe width="560" height="315" src="https://global-uploads.webflow.com/6100d0111a4ed76bc1b9fd54/6354105392e43ef1b7191766_html%201.jpg" allowfullscreen></iframe> 
+							</section>
+
+							<h3>Tips Cepat Belajar HTML</h3>
+
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Belajar HTML mungkin memerlukan banyak waktu dan usaha yang harus kita perjuangkan,<br><h4>Berikut tips cepat belajar HTML</h4></p>
+
+							<ul>
+								<li>Fokus pada pemahaman dasar-dasar HTML, seperti tag, elemen, atribut, dan struktur dasar sebuah halaman HTML.</li>
+								<li>Pembelajaran HTML paling efektif saat dipadukan dengan praktik langsung. Cobalah membuat halaman web sederhana untuk menerapkan konsep yang telah Anda pelajari.</li>
+								<li>Manfaatkan sumber belajar online seperti tutorial, dokumentasi, dan video pembelajaran. Ada banyak sumber gratis yang dapat membantu Anda memahami konsep-konsep HTML dengan cepat.</li>
+								<li>Gunakan alat validasi HTML untuk memeriksa kode Anda dan memastikan bahwa itu sesuai dengan standar. Ini membantu Anda mencegah kesalahan umum dan mempercepat proses pembelajaran.</li>
+								<li>Pelajari dengan baik struktur dasar dokumen HTML, seperti bagaimana menambahkan judul, paragraf, tautan, dan gambar. Ini membentuk dasar dari setiap halaman web.</li>
+								<li>Tentukan rencana pembelajaran yang jelas. Mulailah dengan konsep dasar dan tingkatkan tingkat kesulitan seiring waktu. Misalnya, mulailah dengan teks dan tautan, lalu tambahkan gambar, formulir, dan elemen-elemen lainnya.</li>
+								<li>Gunakan editor teks yang mendukung pengembangan web, seperti Visual Studio Code, Sublime Text, atau Atom. Fitur-fitur seperti penyorotan sintaks, autocompletion, dan linting dapat mempercepat pembelajaran Anda.</li>
+								<li>Selain latihan-latihan kecil, coba terlibat dalam proyek-proyek praktis seperti membuat halaman portofolio pribadi atau landing page sederhana. Ini memberikan konteks dunia nyata untuk keterampilan Anda.</li>
+								<li>Bergabunglah dengan komunitas pengembang web online, seperti forum atau grup media sosial. Pertukaran informasi dan dukungan dari sesama pembelajar dapat meningkatkan pemahaman Anda.</li>
+								<li>Seiring kemajuan Anda dalam HTML, mulailah mempelajari CSS untuk desain dan styling, serta JavaScript untuk interaktivitas. Keterampilan ini akan memperkaya kemampuan pengembangan web Anda secara keseluruhan.</li>
+							</ul>
+
+							<br>
+							<button class="button-64" role="button"><span class="text"><a href="css.html">Info CSS</a></span></button>
+							
+							
+							
+
+
+							<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						</section>
+					</article>
+				</section>
+			</article>
+		</main>
+		<footer> 
+			<small><em>Sekian Terima Gaji - by : Adrias Nurul Iman</em></small>
+		</footer>
+	</div>
+</body>
+</html>
