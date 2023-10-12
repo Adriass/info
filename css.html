@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title> Info Coding </title>
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Vollkorn" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway:600" rel="stylesheet">
+
+	<link rel="stylesheet" href="Tribute.css" type="text/css">
+
+	<style>
+		body {
+	padding:0;
+	margin:0;
+	color: #1f271b;
+	background-color: #051923;
+}
+
+#container {
+	width: auto;
+	margin:100px;
+	background-color: #006494;
+	border-radius:30px;
+}
+
+h1 {
+	text-align: center;
+	padding:40px;
+	font-size:50px;
+	font-family: 'Raleway', sans-serif;
+}
+
+#image {
+	text-align:center;
+	width:100%;
+	height:100%;
+	margin-top:-30px;
+}
+
+#startPassage {
+	width: auto;
+	margin:50px 100px;
+}
+
+.paragraphFont {
+	font-size:20px;
+	font-family: 'Vollkorn', serif;
+}
+
+#videoPosition {
+	float:right;
+	padding:30px;
+}
+
+h2 {
+	font-family: 'Raleway', sans-serif;
+}
+
+footer {
+	text-align:center;
+	font-size:20px;
+}
+
+h1,h2,h4,h3 {
+	font-family: 'Courier New', Courier, monospace;
+	color: #011502;
+}
+
+@media all and (max-width:1200px) {
+
+	.videoPosition {
+		float:none;
+	}
+	
+
+}
+
+#button-86 {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-right: 50px;
+}
+
+#button-86::after,
+#button-86::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .4s;
+}
+
+#button-86::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #28282d;
+  border-radius: 10px;
+}
+
+#button-86::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+#button-86:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+#button-86:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+#button-86:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+</style>
+</head>
+<body>
+	<div id="container">
+		<header> 
+			<h1> CSS (Cascading Style Sheets)</h1> 
+		</header>
+
+		<main>
+			<figure>
+		 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAS9blARQuXNrvMmsOgKcmPkuZhJTpOUrFfw&usqp=CAU" alt="Gambar HTML"  id="image"/>
+			</figure>
+			<article id = "startPassage">
+				<section class="paragraphFont"> 
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CSS, atau Cascading Style Sheets, adalah bahasa pemrograman yang digunakan untuk mengontrol tata letak dan penampilan elemen-elemen pada halaman web. Dengan menggunakan CSS, Anda dapat mengatur gaya dan tata letak elemen HTML, seperti warna, font, jarak antar elemen, dan banyak lagi.</p>
+				</section>
+				<section> 
+					<article>
+						<header> <h2> Sejarah CSS</h2> </header>
+						<section  class="paragraphFont">
+							<p> Sejarah CSS melibatkan perkembangan dari kebutuhan untuk memisahkan struktur dokumen HTML dari presentasi atau gaya, sehingga memungkinkan pengembang untuk lebih mudah mengelola dan mengubah desain halaman web tanpa harus menyentuh struktur HTML-nya.</p>
+							<p>Sejak awal World Wide Web (WWW), HTML digunakan untuk merancang dan menyajikan halaman web. Namun, tidak ada cara yang efisien untuk mengelola tata letak dan desain.
+                                Tim pengembang dan peneliti di CERN, termasuk Håkon Wium Lie dan Bert Bos, mulai mengusulkan ide untuk memiliki pemisahan antara struktur dan presentasi dalam dokumen web.</p>
+							<p>Pada tahun 1994, Håkon Wium Lie dan Bert Bos mengusulkan konsep "Cascading HTML Style Sheets" di Konferensi WWW pertama di Jenewa. Ini adalah langkah pertama menuju CSS.</p>
+							<p>W3C (World Wide Web Consortium) mengembangkan CSS Level 1 sebagai rekomendasi resmi pada Desember 1996. CSS Level 1 memberikan kemampuan dasar untuk mengontrol warna, tata letak, dan gaya teks.</p>
+							<p>CSS Level 2 diperkenalkan dengan lebih banyak fitur dan perbaikan, termasuk dukungan untuk tata letak dan gaya yang lebih kompleks. Ini membawa kemampuan seperti position, z-index, dan media types.</p>
+                            <p>Dengan perbaikan dan klarifikasi atas CSS Level 2, CSS Level 2.1 diterbitkan. Ini adalah revisi yang lebih kecil dengan tujuan menyempurnakan spesifikasi.</p>
+                            <p>CSS Level 3 diperkenalkan dengan konsep modular, memungkinkan pengembang untuk menggunakan bagian-bagian tertentu dari spesifikasi tanpa harus menerapkan semuanya. Ini memperkenalkan fitur-fitur seperti selektor lanjutan, animasi, dan transisi.</p>
+                            <p>Saat penulisan ini pada September 2021, CSS4 sedang dalam pengembangan. Namun, seiring waktu, spesifikasi dan fitur-fitur baru dapat terus ditambahkan.</p>
+                            <p>CSS terus berkembang seiring waktu, dengan perubahan spesifikasi dan penambahan fitur untuk mendukung kebutuhan pengembang web yang semakin kompleks. Penerapan CSS yang baik dapat meningkatkan pengalaman pengguna dan memudahkan pemeliharaan dan pengembangan halaman web.</p>
+						</section>
+					</article>
+				</section>
+				<section>
+					<article>
+						<header><h2>Berapa lama belajar CSS?</h2></header>
+						<section  class="paragraphFont">
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lama waktu yang dibutuhkan untuk belajar CSS dapat bervariasi tergantung pada beberapa faktor, termasuk tingkat pemahaman awal Anda tentang konsep pemrograman dan desain web, seberapa sering Anda berlatih, dan metode pembelajaran yang Anda pilih. Sebagai panduan umum:</p>
+
+							
+							
+							<section id = "videoPosition">
+								<iframe width="560" height="315" src="https://images.spiceworks.com/wp-content/uploads/2022/11/07122209/Lines-of-Cascading-Style-Sheets-or-CSS-code-on-a-black-screen.jpg" allowfullscreen></iframe> 
+							</section>
+
+							<h3>Tips Cepat Belajar CSS</h3>
+
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Belajar CSS mungkin memerlukan banyak waktu dan usaha yang harus kita perjuangkan,<br><h4>Berikut tips cepat belajar HTML</h4></p>
+
+							<ul>
+								<li>Sebelum Anda melangkah ke CSS, pastikan Anda memahami dasar-dasar HTML. CSS digunakan untuk memformat dan mengubah tampilan elemen HTML.</li>
+								<li>Fokus pada konsep dasar CSS seperti selektor, properti, dan nilai. Pahami cara CSS menghubungkan dirinya dengan elemen HTML.</li>
+								<li>Belajar dengan praktik adalah cara terbaik. Cobalah untuk menulis kode CSS untuk proyek kecil atau olahraga pemrograman seperti HackerRank atau CodePen.</li>
+								<li>Box model adalah konsep penting dalam CSS. Pahami bagaimana elemen HTML dikemas dalam kotak dan bagaimana margin, padding, dan border memengaruhi tata letak.</li>
+								<li>Selektor CSS adalah kunci untuk memilih elemen di halaman web. Pelajari berbagai jenis selektor seperti selektor elemen, selektor kelas, dan selektor id.</li>
+								<li>Memahami properti-posisi dan tata letak sangat penting untuk mengontrol penempatan elemen di halaman web. </li>
+								<li>Browser modern memiliki alat inspeksi elemen yang sangat berguna. Gunakan DevTools (biasanya dengan menekan F12 di browser) untuk memahami dan eksperimen dengan kode CSS di situs web.</li>
+								<li>Pahami konsep responsif dan cara menggunakan media query untuk membuat halaman web merespons perangkat dengan berbagai ukuran layar.</li>
+								<li>Buka proyek open source yang menggunakan CSS dengan baik. Pelajari struktur kode mereka, penggunaan kelas, dan konsep tata letak yang kompleks.</li>
+								<li>Ada banyak sumber belajar online, seperti Mozilla Developer Network (MDN), W3Schools, dan CSS-Tricks, yang menyediakan tutorial dan referensi yang sangat baik untuk CSS.</li>
+								<li>Sumber daya seperti Codecademy, freeCodeCamp, atau MDN menyediakan tutorial interaktif yang memungkinkan Anda belajar sambil praktik.</li>
+								<li>Bergabunglah dengan forum atau komunitas online seperti Stack Overflow atau Reddit untuk mendapatkan bantuan dan berbagi pengalaman dengan pengembang CSS lainnya.</li>
+							</ul>
+
+							<br>
+							<button id="button-86" role="button"><a href="html.html">Info HTML</a></button>
+							<button id="button-86" role="button"><a href="JS.html">Info JS</a></button>
+
+							
+							
+							
+							
+
+
+							<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+						</section>
+					</article>
+				</section>
+			</article>
+		</main>
+		<footer> 
+			<small><em>Sekian Terima Gaji - by : Adrias Nurul Iman</em></small>
+		</footer>
+	</div>
+</body>
+</html>
